@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="au.com.realestate.hometime.MainActivity">
+
+    <include android:id="@+id/splashLayout"
+        layout="@layout/activity_splash" />
+
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:id="@+id/tramInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonPanel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:fontFamily="@font/aclonica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/north"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#db1932"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/northListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#f3f4f6"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dip" />
+
+        <TextView
+            android:fontFamily="@font/aclonica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/south"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#db1932"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/southListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#f3f4f6"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dip" />
+    </LinearLayout>
+
+    <include layout="@layout/bottom_button_layout" />
+
+</RelativeLayout>
+

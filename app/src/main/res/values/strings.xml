@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HomeTime</string>
+
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="hometime">HomeTime</string>
+</resources>
