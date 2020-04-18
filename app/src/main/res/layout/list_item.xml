@@ -46,7 +46,8 @@
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@id/imgTram"
         android:fontFamily="@font/aclonica"
-        android:textColor="#86837e" />
+        android:textColor="#86837e"
+        android:textSize="12dp" />
 
     <TextView
         android:id="@+id/time"
